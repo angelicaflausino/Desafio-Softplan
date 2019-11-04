@@ -32,6 +32,8 @@ namespace Web.Api1
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddCors();
             services.AddMvc();
+            services.AddMvcCore()
+                .AddApiExplorer();
 
             ConfigureSwaggerGen(services);
 
@@ -65,6 +67,7 @@ namespace Web.Api1
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Web.Api1 API V1");
+                c.RoutePrefix = string.Empty;
             });
         }
 
@@ -86,7 +89,7 @@ namespace Web.Api1
                 });
 
                 // show token field
-                c.OperationFilter<AuthorizationHeaderParameterOperationFilter>();
+                //c.OperationFilter<AuthorizationHeaderParameterOperationFilter>();
 
                 //exibe comentários na documentação swagger
                 string caminhoApp = PlatformServices.Default.Application.ApplicationBasePath;

@@ -27,10 +27,9 @@ namespace Web.Api2.Controllers
         /// <returns></returns>
         [HttpGet]
         [Produces("application/json")]
-        public async Task<IActionResult> GetCalcularJuros(decimal valorInicial, int meses)
+        public async Task<IActionResult> GetCalcularJuros([FromQuery]decimal valorInicial, [FromQuery]int meses)
         {
-            var calculo = await _calculaJurosService.CalcularJuros(valorInicial, meses);
-            var resultado = calculo.ToString("N2");
+            var resultado = await _calculaJurosService.CalcularJuros(valorInicial, meses);
             return Ok(resultado);
         }
     }

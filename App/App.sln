@@ -35,7 +35,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2.Integracao", "5.2.Integ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.Api.IntegrationTest", "Web.Api.IntegrationTest\Web.Api.IntegrationTest.csproj", "{A1B1C83A-2A52-44C1-BD77-C52CF50DE289}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Test", "App.Test\App.Test.csproj", "{94759888-E5EA-4FB6-A04E-E4A58DBEAB73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Test", "App.Test\App.Test.csproj", "{94759888-E5EA-4FB6-A04E-E4A58DBEAB73}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AB16AB88-68C1-4D7D-9E53-920E206ABFB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{94759888-E5EA-4FB6-A04E-E4A58DBEAB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94759888-E5EA-4FB6-A04E-E4A58DBEAB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94759888-E5EA-4FB6-A04E-E4A58DBEAB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB16AB88-68C1-4D7D-9E53-920E206ABFB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB16AB88-68C1-4D7D-9E53-920E206ABFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB16AB88-68C1-4D7D-9E53-920E206ABFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB16AB88-68C1-4D7D-9E53-920E206ABFB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  web.api1:
+    image: ${DOCKER_REGISTRY-}webapi1
+    build:
+      context: .
+      dockerfile: Web.Api1/Dockerfile
+
+  web.api2:
+    image: ${DOCKER_REGISTRY-}webapi2
+    build:
+      context: .
+      dockerfile: Web.Api2/Dockerfile
+
