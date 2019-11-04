@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Web.Api2</name>
+    </assembly>
+    <members>
+        <member name="M:Web.Api2.Controllers.CalculaJurosController.GetCalcularJuros(System.Decimal,System.Int32)">
+            <summary>
+            Obtem o cálculo de juros composto
+            </summary>
+            <param name="valorInicial"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Web.Api2.Controllers.ShowMeTheCodeController.GetShowMeTheCode">
+            <summary>
+            Obtem a Url do repositório do projeto
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
